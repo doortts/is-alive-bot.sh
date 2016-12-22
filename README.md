@@ -129,7 +129,7 @@ messageOnRevive="Yona comeback!"
 
 #is-alive-bot
 
-[한국어](#is-alive-bot.sh)
+[한국어](#is-alive-botsh)
 
 There are two big steps.
 

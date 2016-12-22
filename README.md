@@ -12,28 +12,26 @@ Server status check and Telegram message notification sending shell
 텔레그램 봇 생성
 ----
 
-1. BotFather 추가
-
+1.BotFather 추가
+```
 https://telegram.me/botfather
-
-2. 새로운 bot 생성
+```
+2.새로운 bot 생성
+```
 /newbot
-
-3. 이름 정하기
+```
+3.이름 정하기
 ```
 Alright, a new bot. How are we going to call it? Please choose a name for your bot.
 ```
 라고 물어보면 공백 상관없이 편하게 이름 짓는다
 예) is Yona Alive
-
-4. bot username 정하기. Bot으로 끝나는 이름이어야 함
+4.bot username 정하기. Bot으로 끝나는 이름이어야 함
 ```
 Good. Now let's choose a username for your bot. It must end in `bot`. Like this, for example: TetrisBot or tetris_bo
 ```
 예) isYonaAlive
-
-
-5. API 토큰 받기
+5.API 토큰 받기
 ```
 ...
 Use this token to access the HTTP API:
@@ -139,34 +137,34 @@ There are two big steps.
 Create a telegram bot
 ----
 
-1. Add BotFather
-
+1.Add BotFather
+```
 Https://telegram.me/botfather
-
-2. Create a new bot
+```
+2.Create a new bot
+```
 / Newbot
-
-3. Determine your name
-`` `
+```
+3.Determine your name
+```
 Alright, a new bot. How are we going to call it? Please choose a name for your bot.
 `` `
 If you ask, you can easily name it regardless of the space.
 Ex) is Yona Alive
 
-4. Setting the bot username. Must end with Bot
-`` `
+4.Setting the bot username. Must end with Bot
+```
 Good. Now let's choose a username for your bot. It must end in `bot`. Like this, for example: TetrisBot or tetris_bo
-`` `
+```
 Ex) isYonaAlive
 
-
-5. Get an API token
-`` `
+5.Get an API token
+```
 ...
 Use this to access the HTTP API:
 346694123: AAFhL69MxM8kOqjtUtIeRAguasgVYw7H3zF4
 ...
-`` `
+```
 
 From now on, run is-alive-bot.sh and it will guide you.
 
@@ -184,20 +182,20 @@ Sh is-alive-bot.sh API_TOKEN USER_CHAT_ID
 
 Ex>
 Sh is-alive-bot.sh 328394984: AAFhL69afasfqjtUtIeRSzIagVYw7H3zF4 2156789
-`` `
+```
 
 Find the id value and run it with arguments.
 
 Yes)
-`` `
+```
 Nohup sh is-alive-bot.sh 328394984: AAFhL69afasfqjtUtIeRSzIagVYw7H3zF4 2156789 &
-`` `
+```
 
 Setting
 ---
 Opening is-alive-bot.sh in the editor ...
 
-`` `
+```
 #
 # Check Yona server status and send me / group a message with telegram
 #

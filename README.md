@@ -26,11 +26,13 @@ Alright, a new bot. How are we going to call it? Please choose a name for your b
 ```
 라고 물어보면 공백 상관없이 편하게 이름 짓는다
 예) is Yona Alive
+
 4.bot username 정하기. Bot으로 끝나는 이름이어야 함
 ```
 Good. Now let's choose a username for your bot. It must end in `bot`. Like this, for example: TetrisBot or tetris_bo
 ```
 예) isYonaAlive
+
 5.API 토큰 받기
 ```
 ...
@@ -141,14 +143,16 @@ Create a telegram bot
 ```
 Https://telegram.me/botfather
 ```
+
 2.Create a new bot
 ```
 / Newbot
 ```
+
 3.Determine your name
 ```
 Alright, a new bot. How are we going to call it? Please choose a name for your bot.
-`` `
+```
 If you ask, you can easily name it regardless of the space.
 Ex) is Yona Alive
 
@@ -174,6 +178,7 @@ Running is-alive-bot.sh and following instructions
 
 If you run sh is-alive-bot.sh, you will see a message like this:
 
+```
 "Ok": true, "result": []}
 -------------------------------------------------- -
 
@@ -186,7 +191,7 @@ Sh is-alive-bot.sh 328394984: AAFhL69afasfqjtUtIeRSzIagVYw7H3zF4 2156789
 
 Find the id value and run it with arguments.
 
-Yes)
+Ex)
 ```
 Nohup sh is-alive-bot.sh 328394984: AAFhL69afasfqjtUtIeRSzIagVYw7H3zF4 2156789 &
 ```
@@ -225,4 +230,4 @@ MessageOnRevive = "Yona comeback!"
 
 # Configurations end here ...
 ...
-`` `
+```

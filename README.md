@@ -1,6 +1,110 @@
 # is-alive-bot.sh
 Server status check and Telegram message notification sending shell
 
+[한국어](#is-alive-botsh)
+
+There are two big steps.
+
+- Create a telegram bot and get an api key
+- Run is-alive-bot.sh and follow the instructions
+
+Create a telegram bot
+----
+
+1.Add BotFather
+```
+Https://telegram.me/botfather
+```
+
+2.Create a new bot
+```
+/ Newbot
+```
+
+3.Determine your name
+```
+Alright, a new bot. How are we going to call it? Please choose a name for your bot.
+```
+If you ask, you can easily name it regardless of the space.
+Ex) is Yona Alive
+
+4.Setting the bot username. Must end with Bot
+```
+Good. Now let's choose a username for your bot. It must end in `bot`. Like this, for example: TetrisBot or tetris_bo
+```
+Ex) isYonaAlive
+
+5.Get an API token
+```
+...
+Use this to access the HTTP API:
+346694123: AAFhL69MxM8kOqjtUtIeRAguasgVYw7H3zF4
+...
+```
+
+From now on, run is-alive-bot.sh and it will guide you.
+
+
+Running is-alive-bot.sh and following instructions
+---
+
+If you run sh is-alive-bot.sh, you will see a message like this:
+
+```
+"Ok": true, "result": []}
+-------------------------------------------------- -
+
+And then retry ...
+Sh is-alive-bot.sh API_TOKEN USER_CHAT_ID
+
+Ex>
+Sh is-alive-bot.sh 328394984: AAFhL69afasfqjtUtIeRSzIagVYw7H3zF4 2156789
+```
+
+Find the id value and run it with arguments.
+
+Ex)
+```
+Nohup sh is-alive-bot.sh 328394984: AAFhL69afasfqjtUtIeRSzIagVYw7H3zF4 2156789 &
+```
+
+Setting
+---
+Opening is-alive-bot.sh in the editor ...
+
+```
+#
+# Check Yona server status and send me / group a message with telegram
+#
+
+# Configurations start ..
+# ~~~~~~~~~~~~~~~~~~~~~~
+
+# API_TOKEN = 123456789: AbCdEfgijk1LmPQRSTu234v5Wx-yZA67BCD
+API_TOKEN = ""
+
+# USER_CHAT_ID = 123456789
+USER_CHAT_ID = ""
+
+# TARGET_SERVER = "http://my-yona-server.com"
+TARGET_SERVER = "http://127.0.0.1:9000"
+
+CHECK_URL = "$ TARGET_SERVER / -_- api / v1 / hello"
+
+EXPECTED_STATUS_CODE = 200
+
+# Polling Time (sec)
+POLLING_TIME = 60
+
+# Messages
+MessageOnDown = "Yona is unavaliable!"
+MessageOnRevive = "Yona comeback!"
+
+# Configurations end here ...
+...
+```
+
+
 [English](#is-alive-bot)
 
 크게 두 단계로 작업이 진행됩니다.
@@ -127,107 +231,3 @@ messageOnRevive="Yona comeback!"
 
 해당 부분을 설정하면 굳이 파라미터를 이용해서 실행하지 않아도 됩니다.
 
-#is-alive-bot
-
-[한국어](#is-alive-botsh)
-
-There are two big steps.
-
-- Create a telegram bot and get an api key
-- Run is-alive-bot.sh and follow the instructions
-
-Create a telegram bot
-----
-
-1.Add BotFather
-```
-Https://telegram.me/botfather
-```
-
-2.Create a new bot
-```
-/ Newbot
-```
-
-3.Determine your name
-```
-Alright, a new bot. How are we going to call it? Please choose a name for your bot.
-```
-If you ask, you can easily name it regardless of the space.
-Ex) is Yona Alive
-
-4.Setting the bot username. Must end with Bot
-```
-Good. Now let's choose a username for your bot. It must end in `bot`. Like this, for example: TetrisBot or tetris_bo
-```
-Ex) isYonaAlive
-
-5.Get an API token
-```
-...
-Use this to access the HTTP API:
-346694123: AAFhL69MxM8kOqjtUtIeRAguasgVYw7H3zF4
-...
-```
-
-From now on, run is-alive-bot.sh and it will guide you.
-
-
-Running is-alive-bot.sh and following instructions
----
-
-If you run sh is-alive-bot.sh, you will see a message like this:
-
-```
-"Ok": true, "result": []}
--------------------------------------------------- -
-
-And then retry ...
-Sh is-alive-bot.sh API_TOKEN USER_CHAT_ID
-
-Ex>
-Sh is-alive-bot.sh 328394984: AAFhL69afasfqjtUtIeRSzIagVYw7H3zF4 2156789
-```
-
-Find the id value and run it with arguments.
-
-Ex)
-```
-Nohup sh is-alive-bot.sh 328394984: AAFhL69afasfqjtUtIeRSzIagVYw7H3zF4 2156789 &
-```
-
-Setting
----
-Opening is-alive-bot.sh in the editor ...
-
-```
-#
-# Check Yona server status and send me / group a message with telegram
-#
-
-# Configurations start ..
-# ~~~~~~~~~~~~~~~~~~~~~~
-
-# API_TOKEN = 123456789: AbCdEfgijk1LmPQRSTu234v5Wx-yZA67BCD
-API_TOKEN = ""
-
-# USER_CHAT_ID = 123456789
-USER_CHAT_ID = ""
-
-# TARGET_SERVER = "http://my-yona-server.com"
-TARGET_SERVER = "http://127.0.0.1:9000"
-
-CHECK_URL = "$ TARGET_SERVER / -_- api / v1 / hello"
-
-EXPECTED_STATUS_CODE = 200
-
-# Polling Time (sec)
-POLLING_TIME = 60
-
-# Messages
-MessageOnDown = "Yona is unavaliable!"
-MessageOnRevive = "Yona comeback!"
-
-# Configurations end here ...
-...
-```

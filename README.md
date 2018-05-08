@@ -1,7 +1,7 @@
 # is-alive-bot.sh
 Server status check and Telegram message notification sending shell
 
-[한국어](#is-alive-botsh)
+[한국어](#한국어)
 
 There are two big steps.
 
@@ -105,7 +105,9 @@ MessageOnRevive = "Yona comeback!"
 ```
 
 
-[English](#is-alive-bot)
+# 한국어
+
+[English](#is-alive-botsh)
 
 크게 두 단계로 작업이 진행됩니다.
 

@@ -48,9 +48,11 @@ From now on, run is-alive-bot.sh and it will guide you.
 Running is-alive-bot.sh and following instructions
 ---
 
-If you run sh is-alive-bot.sh, you will see a message like this:
+If you run `sh is-alive-bot.sh`, you will see a message like this:
 
-```                                                       
+```          
+> sh is-alive-bot.sh
+
 Telegram Bot api token is reqruied!
 
 ex>

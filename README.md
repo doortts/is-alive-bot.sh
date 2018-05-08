@@ -50,15 +50,35 @@ Running is-alive-bot.sh and following instructions
 
 If you run sh is-alive-bot.sh, you will see a message like this:
 
+```                                                       
+Telegram Bot api token is reqruied!
+
+ex>
+sh is-alive-bot.sh 328394984:AAFhL69afasfqjtUtIeRSzIagVYw7H3zF4
+
+See: https://core.telegram.org/bots#3-how-do-i-create-a-bot
 ```
-"Ok": true, "result": []}
--------------------------------------------------- -
 
-And then retry ...
-Sh is-alive-bot.sh API_TOKEN USER_CHAT_ID
+Run again with token which is previously taken.
 
-Ex>
-Sh is-alive-bot.sh 328394984: AAFhL69afasfqjtUtIeRSzIagVYw7H3zF4 2156789
+
+```
+sh is-alive-bot.sh 328394984:AAFhL69afasfqjtUtIeRSzIagVYw7H3zF4                    
+
+---------------------------------------------------
+Find chat id of user or group with your own eyes..
+
+..chat":{ "id": 621884 ...  <= user or group id!
+---------------------------------------------------
+
+{"ok":true,"result":[]}
+---------------------------------------------------
+
+and then retry...
+sh is-alive-bot.sh API_TOKEN USER_CHAT_ID
+
+ex>
+sh is-alive-bot.sh 328394984:AAFhL69afasfqjtUtIeRSzIagVYw7H3zF4 2156789
 ```
 
 Find the id value and run it with arguments.

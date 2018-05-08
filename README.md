@@ -65,7 +65,7 @@ Run again with token which is previously taken.
 
 
 ```
-sh is-alive-bot.sh 328394984:AAFhL69afasfqjtUtIeRSzIagVYw7H3zF4                    
+> sh is-alive-bot.sh 328394984:AAFhL69afasfqjtUtIeRSzIagVYw7H3zF4                    
 
 ---------------------------------------------------
 Find chat id of user or group with your own eyes..
@@ -90,7 +90,9 @@ Ex)
 Nohup sh is-alive-bot.sh 328394984: AAFhL69afasfqjtUtIeRSzIagVYw7H3zF4 2156789 &
 ```
 
-Setting
+That's all!!
+
+Custom Settings
 ---
 Opening is-alive-bot.sh in the editor ...
 
